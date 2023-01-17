@@ -10,12 +10,19 @@ body {
   font-size: 22px;
 }
 
+.container{
+    height: 400vh;
+}
+
+/* nav */
+
 nav {
   flex-direction: column;
+  letter-spacing: 8px;
 }
 
 nav h1 {
-  font-size: 3rem;
+    font-size: 3rem;
 }
 
 .navbar {
@@ -23,34 +30,98 @@ nav h1 {
   justify-content: space-evenly;
   font-size: 1.5rem;
   text-decoration: underline;
-  /* margin: 0 10%;  */
+  margin-left: 10px;
+  margin-bottom: 3%;
 }
+
+/* description */
 
 .mission {
   background-image: url("./img/back2.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  height: 300px;
+  height: 265px;
   text-shadow: black;
+  margin-bottom: 10%;
 }
 
 .statement {
+  padding: 5px 0 10px 0;
+  margin-top: 5px;  
   color: gray;
   background-color: black;
-  height: 150px;
+  height: 160px;
 }
+
+/* games */
 
 .videosection {
     min-height: 500px;
+    flex-wrap: wrap;
+    margin-top: 50px;
 }
 
-.games{
+.top-row {
     display: flex;
-    flex-direction: row;
     justify-content: space-evenly;
+    margin-top: 5%;
 }
+
+.bottom-row {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    /* margin-right: 8%; */
+    margin-top: 8%;
+}
+
 
 .agame img{
-  height: 150px;
-  width: 150px;
+  height: 180px;
+  width: 250px;
+}
+
+
+/* team */
+
+.team{
+    background-image: url("./img/back1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 650px;
+}
+
+.people{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10%;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.person img{
+    height: 300px;
+    width: 270px;
+    border-radius: 50%;
+}
+
+.person{
+    margin-top: 5%;
+}
+
+.content{
+    text-shadow: -2px 0 blue, 0 2px blue, 2px 0 blue, 0 -2px blue;
+    margin-left:10%;
+    align-items: center;
+    margin-top: 10%;
+    color: gray;
+    /* background-color: black; */
+    border-radius: 5px;
+    height: 150px;
+    width: 200px;
+}
+
+
+footer{
+    margin-top: 8%;
 }
