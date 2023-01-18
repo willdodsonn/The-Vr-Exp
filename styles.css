@@ -10,19 +10,18 @@ body {
   font-size: 22px;
 }
 
-.container{
-    height: 400vh;
+.container {
+  height: 400vh;
 }
 
 /* nav */
 
 nav {
-  flex-direction: column;
   letter-spacing: 8px;
 }
 
 nav h1 {
-    font-size: 3rem;
+  font-size: 3rem;
 }
 
 .navbar {
@@ -47,7 +46,7 @@ nav h1 {
 
 .statement {
   padding: 5px 0 10px 0;
-  margin-top: 5px;  
+  margin-top: 5px;
   color: gray;
   background-color: black;
   height: 160px;
@@ -56,72 +55,112 @@ nav h1 {
 /* games */
 
 .videosection {
-    min-height: 500px;
-    flex-wrap: wrap;
-    margin-top: 50px;
+  min-height: 500px;
+  flex-wrap: wrap;
+  margin-top: 50px;
 }
 
 .top-row {
-    display: flex;
-    justify-content: space-evenly;
-    margin-top: 5%;
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 5%;
 }
 
 .bottom-row {
-    display: flex;
-    justify-content: space-evenly;
-    flex-direction: row;
-    /* margin-right: 8%; */
-    margin-top: 8%;
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: row;
+  /* margin-right: 8%; */
+  margin-top: 8%;
 }
 
-
-.agame img{
+.agame img {
   height: 180px;
   width: 250px;
 }
 
-
 /* team */
 
-.team{
-    background-image: url("./img/back1.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 650px;
+.team {
+  background-image: url("./img/back1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 650px;
 }
 
-.people{
-    display: flex;
-    justify-content: space-around;
-    margin-top: 10%;
-    flex-wrap: wrap;
-    flex-direction: row;
+.people {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 10%;
+  flex-wrap: wrap;
+  flex-direction: row;
 }
 
-.person img{
+.person img {
+  height: 300px;
+  width: 270px;
+  border-radius: 50%;
+}
+
+.person {
+  margin-top: 5%;
+}
+
+.content {
+  text-shadow: -2px 0 blue, 0 2px blue, 2px 0 blue, 0 -2px blue;
+  margin-left: 10%;
+  align-items: center;
+  margin-top: 10%;
+  color: gray;
+  /* background-color: black; */
+  border-radius: 5px;
+  height: 150px;
+  width: 200px;
+}
+
+footer {
+  margin-top: 8%;
+}
+
+@media only screen and (max-width: 550px), (orientation: portrait) {
+  .navbar {
+    width: 95%;
+    display: block;
+  }
+}
+@media only screen and (max-width: 1101px), (orientation: portrait) {
+  .statement {
+    min-height: 160px;
+    height: 230px;
+  }
+
+  .mission {
     height: 300px;
-    width: 270px;
-    border-radius: 50%;
+  }
 }
 
-.person{
-    margin-top: 5%;
+@media only screen and (max-width: 980px), (orientation: portrait) {
+  .top-row,
+  .bottom-row {
+    display: block;
+    justify-content: space-evenly;
+  }
+
+  .agame {
+    margin-bottom: 80px;
+  }
 }
 
-.content{
-    text-shadow: -2px 0 blue, 0 2px blue, 2px 0 blue, 0 -2px blue;
-    margin-left:10%;
-    align-items: center;
-    margin-top: 10%;
-    color: gray;
-    /* background-color: black; */
-    border-radius: 5px;
-    height: 150px;
-    width: 200px;
-}
+@media only screen and (max-width: 827px), (orientation: portrait){
+  .team{
+    height: 1800px;
+  }
+  
+  /* .people{
+    display: block;
+  } */
 
-
-footer{
-    margin-top: 8%;
+  .person{
+    margin-bottom: 80px;
+  }
 }
